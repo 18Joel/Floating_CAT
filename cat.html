@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(31, 32, 32);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .cat{
+    height: 85px;
+    width: 180px;
+    background-color: white;
+    border-radius: 50px 15px 0px 50px;
+    position: relative;
+    cursor: pointer;
+    animation: floating 2s infinite ease-in-out;
+    transition: .3s;
+        }
+        @keyframes floating{
+            50%{
+                transform: translateY(-30px);
+            }
+        }
+.cat:hover{
+    width: 160px;
+}
+ .face{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top:-1rem;
+    left: -40px;
+    display: flex;
+    left: calc(50% -50px);
+}
+ .eyes{
+    margin-top:20px;
+    margin-left: 10px;
+    width: 20px;
+    height: 15px;
+    background-color:rgb(31, 32, 32) ;
+    border-radius: 50%;
+    transition: .3s linear;    
+}
+.cat:hover .eyes{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.nose{
+    margin-top:40px;
+    margin-left: -35px;
+    width: 15px;
+    height: 8px;
+    border-radius:50%;
+    background-color:rgb(31, 32, 32) ;
+}
+.a{
+    transform: skewY(-15deg);
+    width: 30px;
+    height: 2px;
+    background-color:rgb(31, 32, 32);
+    margin-top:40px;
+    margin-left: -2px;
+    transition: .3s;
+}
+.b{
+    width: 30px;
+    height: 2px;
+    background-color:rgb(31, 32, 32);
+    margin-top:45px;
+    margin-left: -32px;
+    transition: .3s;
+
+}
+.c{
+    transform: skewY(15deg);
+    width: 30px;
+    height: 2px;
+    background-color:rgb(31, 32, 32);
+    margin-top:49px;
+    margin-left: -32px;
+    transition: .3s;
+
+}
+.cat:hover .c{
+    transform: skewY(5deg);
+}
+.cat:hover .b{
+    transform: skewY(0deg);
+}.cat:hover .a{
+    transform: skewY(-5deg);
+}
+.tail{
+    width: 230px;
+    height: 20px;
+    background-color:white;
+    border-radius: 500px;
+    margin-top: 20px;
+}
+.mouth{
+    background-color:rgb(31, 32, 32);
+    margin-top: 60px;
+    margin-left: -28px;
+    width: 25px;
+    height: 3px;
+    transition: .5s;
+}
+.cat:hover .mouth{
+    background-color:rgb(31, 32, 32);
+    margin-top: 60px;
+    margin-left: -28px;
+    width: 30px;
+    height: 30px;
+    border-radius:20px 0 20px  10px;
+}
+.ears{
+    margin-top: -5px;
+    margin-left: 20px;
+    height: 30px;
+    width: 20px;
+    background-color:rgb(255, 255, 255);
+    border-radius:50%;
+    transform: skewY(-35deg);
+}
+.feet{
+            position: absolute;
+            width: 100%;
+            bottom: -20px;
+            display: flex;
+        }
+        .feet span{
+            flex: 1;
+            height: 20px;
+            border-radius: 0 0 20px 20px;
+            background-color: rgb(255, 255, 255);
+        }
+.feet span:first-child{
+            border-radius: 10px 0px 12px 20px;
+        }
+       
+        .feet span:last-child{
+            border-radius: 0 0 20px 12px;
+        }
+
+    </style>
+    <title>Cat</title>
+ </head>
+ <body>
+    <div class="cat">
+        
+        <div class="face">
+
+            <div class="eyes"></div>
+            <div class="nose"></div>
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+            
+            <div class="mouth"></div>
+            <div class="ears"> 
+                <span></span>
+            </div>
+        </div>
+        
+          <div class="feet">
+            <span></span><span></span>
+          </div>
+            <div class="tail"></div>
+    </div>
+ </body>
+ </html>
